@@ -1,0 +1,51 @@
+import Link from "next/link";
+import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
+
+export default function FooterTop() {
+    return (
+        <div className="grid md:grid-cols-4 gap-10">
+            <div>
+                <h4 className="mb-5 text-lg">Kết nối với chúng tôi</h4>
+                <p className="text-gray-800 mb-4"><Link href="" className="underline">Đăng ký </Link>
+                    nhận thư điện tử để cập nhật những tin tức mới nhất từ LUXE, bao gồm các buổi ra mắt độc quyền trực tuyến và bộ sưu tập mới.
+                </p>
+                <div className="flex space-x-4">
+                    <Link href="#" className="text-gray-800 text-xl hover:text-[#C19A6B] transition"><CiInstagram /></Link>
+                    <Link href="#" className="text-gray-800 text-xl hover:text-[#C19A6B] transition"><CiTwitter /></Link>
+                    <Link href="#" className="text-gray-800 text-xl hover:text-[#C19A6B] transition"><CiYoutube /></Link>
+                    <Link href="#" className="text-gray-800 text-xl hover:text-[#C19A6B] transition"><CiFacebook /></Link>
+                </div>
+            </div>
+            <div>
+                <h4 className="mb-5 text-lg">Dịch vụ</h4>
+                <ul className="space-y-2 text-gray-800">
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Dịch vụ bảo hành</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Dịch vụ cá nhân hóa</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Nghệ thuật tặng quà</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Dịch vụ hoàn tiền</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Dịch vụ hoàn hàng</Link></li>
+                </ul>
+            </div>
+            <div>
+                <h4 className="mb-5 text-lg">Về lUXE</h4>
+                <ul className="space-y-2 text-gray-800">
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">nghệ thuật & văn hóa</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Phát triển biền vững</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Tin mới nhất</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Nghề nghiệp</Link></li>
+                </ul>
+            </div>
+            <div>
+                <h4 className="mb-5 text-lg">Hộ trợ</h4>
+                <ul className="space-y-2 text-gray-800">
+                    <p className="text-gray-800 mb-4">
+                        Quý khách có thể liên hệ với chúng tôi qua Hotline <Link href="" className="underline">+84 0865945907</Link> , <Link href="" className="underline">Zalo</Link>, <Link href="" className="underline">Email</Link>, hoặc các phương thức liên hệ khác.
+                    </p>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Câu hỏi thường gặp</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Chăm sóc khách hàng</Link></li>
+                    <li><Link href="#" className="hover:text-[#C19A6B] transition">Cửa hàng</Link></li>
+                </ul>
+            </div>
+        </div>
+    )
+}
