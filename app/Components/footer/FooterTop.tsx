@@ -5,8 +5,8 @@ export default function FooterTop() {
     return (
         <div className="grid md:grid-cols-4 gap-10">
             <div>
-                <h4 className="mb-5 text-lg">Kết nối với chúng tôi</h4>
-                <p className="text-gray-800 mb-4"><Link href="" className="underline">Đăng ký </Link>
+                <h4 className="mb-5 text-lg text-gray-900">Kết nối với chúng tôi</h4>
+                <p className="text-gray-800 mb-4"><Link href="/register" className="underline">Đăng ký </Link>
                     nhận thư điện tử để cập nhật những tin tức mới nhất từ LUXE, bao gồm các buổi ra mắt độc quyền trực tuyến và bộ sưu tập mới.
                 </p>
                 <div className="flex space-x-4">
@@ -17,7 +17,7 @@ export default function FooterTop() {
                 </div>
             </div>
             <div>
-                <h4 className="mb-5 text-lg">Dịch vụ</h4>
+                <h4 className="mb-5 text-lg text-gray-900">Dịch vụ</h4>
                 <ul className="space-y-2 text-gray-800">
                     <li><Link href="#" className="hover:text-[#C19A6B] transition">Dịch vụ bảo hành</Link></li>
                     <li><Link href="#" className="hover:text-[#C19A6B] transition">Dịch vụ cá nhân hóa</Link></li>
@@ -27,7 +27,7 @@ export default function FooterTop() {
                 </ul>
             </div>
             <div>
-                <h4 className="mb-5 text-lg">Về lUXE</h4>
+                <h4 className="mb-5 text-lg text-gray-900">Về lUXE</h4>
                 <ul className="space-y-2 text-gray-800">
                     <li><Link href="#" className="hover:text-[#C19A6B] transition">nghệ thuật & văn hóa</Link></li>
                     <li><Link href="#" className="hover:text-[#C19A6B] transition">Phát triển biền vững</Link></li>
@@ -36,7 +36,7 @@ export default function FooterTop() {
                 </ul>
             </div>
             <div>
-                <h4 className="mb-5 text-lg">Hộ trợ</h4>
+                <h4 className="mb-5 text-lg text-gray-900">Hộ trợ</h4>
                 <ul className="space-y-2 text-gray-800">
                     <p className="text-gray-800 mb-4">
                         Quý khách có thể liên hệ với chúng tôi qua Hotline <Link href="" className="underline">+84 0865945907</Link> , <Link href="" className="underline">Zalo</Link>, <Link href="" className="underline">Email</Link>, hoặc các phương thức liên hệ khác.
