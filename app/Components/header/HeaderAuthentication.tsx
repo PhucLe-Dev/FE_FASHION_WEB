@@ -19,7 +19,7 @@ export default function HeaderAuthenticaton() {
   };
 
   // Giả sử kiểm tra xem người dùng đã đăng nhập hay chưa
-  const isLoggedIn = false; // Thay đổi thành true nếu người dùng đã đăng nhập
+  const isLoggedIn = true; // Thay đổi thành true nếu người dùng đã đăng nhập
 
   return (
     <div
@@ -50,7 +50,7 @@ export default function HeaderAuthenticaton() {
             }`}
           >
             <Link
-              href="#"
+              href="/user"
               className="block flex items-center justify-between px-4 py-2 text-gray-900 hover:bg-gray-100 transition-colors duration-200"
             >
               Trang cá nhân

@@ -92,7 +92,7 @@ export default function HeaderNav() {
             </li>
             <li className="relative group">
               <Link
-                href=""
+                href="/contact"
                 onClick={closeSidebar}
                 className="flex justify-between text-lg hover:text-[#C19A6B] transition-colors duration-300 w-full text-left flex items-center relative"
               >

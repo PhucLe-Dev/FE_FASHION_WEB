@@ -29,12 +29,11 @@ export default function HeaderCart() {
       onBlur={handleBlur}
     >
       {/* Biểu tượng giỏ hàng */}
-      <Link
-        href="#"
-        className="flex items-center text-2xl text-gray-900 hover:text-[#C19A6B] transition-colors duration-300 ease-in-out"
+      <button
+        className="cursor-pointer flex items-center text-2xl text-gray-900 hover:text-[#C19A6B] transition-colors duration-300 ease-in-out"
       >
         <CiShoppingCart />
-      </Link>
+      </button>
 
       {/* Dropdown khi giỏ hàng có sản phẩm */}
       {!isCartEmpty && (
@@ -67,7 +66,7 @@ export default function HeaderCart() {
                 Tổng: <span className="font-medium">31.480.000đ</span>
               </p>
               <Link
-                href="#"
+                href="/cart"
                 className="block mt-2 px-4 py-2 bg-[#C19A6B] text-white text-center hover:bg-[#a38156] transition-colors duration-200"
               >
                 Xem giỏ hàng
@@ -89,6 +88,12 @@ export default function HeaderCart() {
             </div>
             <p className="text-gray-900">Giỏ hàng của bạn đang rỗng</p>
           </div>
+          <Link
+                href="/cart"
+                className="block mt-2 px-4 py-2 bg-[#C19A6B] text-white text-center hover:bg-[#a38156] transition-colors duration-200"
+              >
+                Xem giỏ hàng
+              </Link>
         </div>
       )}
     </div>

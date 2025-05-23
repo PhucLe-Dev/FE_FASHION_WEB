@@ -11,7 +11,9 @@ export default function BoxProduct({ listProduct }: { listProduct: IProduct[] })
                         <div
                             className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-20 transition duration-300 flex items-center justify-center">
                             <button
-                                className="cursor-pointer bg-white text-primary px-8 py-3 opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0 hover:bg-[#C19A6B] hover:text-white font-medium tracking-wider">CHI TIẾT</button>
+                                className="cursor-pointer bg-white text-sm px-8 py-3 opacity-0 group-hover:opacity-90 transition duration-300 transform translate-y-4 group-hover:translate-y-0 hover:bg-[#C19A6B] hover:text-white font-medium tracking-wider">CHI TIẾT</button>
+                                <button
+                                className="cursor-pointer bg-white text-sm px-8 py-3 opacity-0 group-hover:opacity-90 transition duration-300 transform translate-y-4 group-hover:translate-y-0 hover:bg-[#C19A6B] hover:text-white font-medium tracking-wider">THÊM VÀO GIỎ HÀNG</button>
                         </div>
                         {item.variants[0]?.phan_tram_km > 0 && (<div className="absolute top-0 left-0 bg-[#C19A6B] text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider">sale {item.variants[0]?.phan_tram_km}%</div>)}
                     </div>
