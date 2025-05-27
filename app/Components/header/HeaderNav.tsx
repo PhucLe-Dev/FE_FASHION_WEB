@@ -1,7 +1,8 @@
 "use client";
+import { SlidersHorizontal } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-import { CiCircleRemove, CiMenuBurger } from "react-icons/ci";
+import { CiCircleRemove } from "react-icons/ci";
 
 export default function HeaderNav() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -41,7 +42,7 @@ export default function HeaderNav() {
         className="flex items-center cursor-pointer text-xl text-gray-900 hover:text-[#C19A6B] transition-colors duration-300 ease-in-out"
         onClick={toggleSidebar}
       >
-        <CiMenuBurger className="mr-2" />
+        <SlidersHorizontal size={17}  className='mr-2'/>
       </div>
 
       {/* Sidebar */}
@@ -77,7 +78,7 @@ export default function HeaderNav() {
             </li>
             <li className="relative group">
               <Link
-                href=""
+                href="/products"
                 onClick={closeSidebar}
                 className="flex justify-between text-lg hover:text-[#C19A6B] transition-colors duration-300 w-full text-left flex items-center relative"
               >
@@ -107,7 +108,7 @@ export default function HeaderNav() {
             </li>
             <li className="relative group">
               <Link
-                href=""
+                href="/about"
                 onClick={closeSidebar}
                 className="flex justify-between text-lg hover:text-[#C19A6B] transition-colors duration-300 w-full text-left flex items-center relative"
               >

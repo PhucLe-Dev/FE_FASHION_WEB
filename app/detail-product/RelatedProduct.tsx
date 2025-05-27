@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IProduct } from "../interface/ISanPham";
 import { useEffect, useState } from "react";
 
-export default function RelatedProduct({sku}: {sku: string}) {
+export default function RelatedProduct({ sku }: { sku: string }) {
     const [sp_arr, setSpArr] = useState<IProduct[]>([]);
 
     const fetchRelatedProducts = async () => {
@@ -32,7 +32,7 @@ export default function RelatedProduct({sku}: {sku: string}) {
                     KHÁM PHÁ NHỮNG SẢN PHẨM LIÊN QUAN ĐẾN SẢN PHẨM TRÊN
                 </p>
             </div>
-            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {sp_arr.map((item: IProduct) =>
                     <Link href={`/detail-product/${item.variants[0]?.sku}`} key={item._id} className="product-card bg-white group relative">
                         <div className="relative overflow-hidden">
@@ -41,7 +41,11 @@ export default function RelatedProduct({sku}: {sku: string}) {
                             <div
                                 className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-20 transition duration-300 flex items-center justify-center">
                                 <button
-                                    className="cursor-pointer bg-white text-primary px-8 py-3 opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0 hover:bg-[#C19A6B] hover:text-white font-medium tracking-wider">CHI TIẾT</button>
+                                    className="cursor-pointer bg-white text-xs px-6 py-4 opacity-0 group-hover:opacity-90 transition duration-300 transform translate-y-4 group-hover:translate-y-0 hover:bg-[#C19A6B] hover:text-white font-medium tracking-wider">CHI TIẾT
+                                </button>
+                                <button
+                                    className="cursor-pointer bg-white text-xs px-6 py-4 opacity-0 group-hover:opacity-90 transition duration-300 transform translate-y-4 group-hover:translate-y-0 hover:bg-[#C19A6B] hover:text-white font-medium tracking-wider">THÊM VÀO GIỎ HÀNG
+                                </button>
                             </div>
                             {item.variants[0]?.phan_tram_km > 0 && (<div className="absolute top-0 left-0 bg-[#C19A6B] text-white px-4 py-2 text-xs font-semibold uppercase tracking-wider">sale {item.variants[0]?.phan_tram_km}%</div>)}
                         </div>

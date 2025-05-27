@@ -42,7 +42,7 @@ export default function NewProduct() {
                 <BoxProduct listProduct={listProduct}/>
 
                 <div className="text-center mt-12">
-                    <Link href="" className="cursor-pointer bg-[#C19A6B] text-white px-10 py-4 hover:opacity-90 transition tracking-wider font-medium uppercase">
+                    <Link href="/products" className="cursor-pointer bg-[#C19A6B] text-white px-10 py-4 hover:opacity-90 transition tracking-wider font-medium uppercase">
                         Xem tất cả
                     </Link>
                 </div>

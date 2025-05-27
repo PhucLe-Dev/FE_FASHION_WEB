@@ -5,8 +5,10 @@ import { CiCircleChevLeft, CiCircleChevRight } from 'react-icons/ci';
 export default function Hero() {
   // Danh sách các hình nền cho slider
   const slides = [
+    'https://www.louisvuitton.com/images/is/image/lv/LV_TM_CHAPTER3_LV_RESORT_03_LVCOM_2048x1152_DI3.jpg?wid=1440',
     'https://vn.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/brand-content-coremedia/women/2025/collection/lv-style-diary-spring-edition/WOMEN_CREATORS_WORN_2_DI3.jpg?wid=1440',
     'https://www.louisvuitton.com/images/is/image/lv/Women_Campaign_LVxTM_Chapter2_Zendaya02_DI3.jpg?wid=1440',
+    'https://www.louisvuitton.com/images/is/image/lv/ZENDAYA_TM_CHAPTER3_LV_RESORT_DP4_LVCOM_DI3.jpg?wid=1440',
     'https://vn.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/brand-content-coremedia/women/2025/collection/lv-style-diary-spring-edition/WOMEN_CREATORS_WORN_10_DI3.jpg?wid=1440',
   ];
 

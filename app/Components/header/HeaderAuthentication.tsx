@@ -19,7 +19,7 @@ export default function HeaderAuthenticaton() {
   };
 
   // Giả sử kiểm tra xem người dùng đã đăng nhập hay chưa
-  const isLoggedIn = true; // Thay đổi thành true nếu người dùng đã đăng nhập
+  const isLoggedIn = false; // Thay đổi thành true nếu người dùng đã đăng nhập
 
   return (
     <div

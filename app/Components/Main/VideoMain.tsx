@@ -27,7 +27,7 @@ export default function VideoMain() {
                             </p>
                             <p className="mt-8 mb-12 text-lg">&quot;Tinh tế trong từng đường nét, thanh lịch trong mọi khoảnh khắc – phong cách của bạn, dấu ấn của chúng tôi.&quot;</p>
                             <div className="flex flex-wrap justify-center">
-                                <Link href="" className="px-6 py-3 text-sm text-white cursor-pointer border border-[#C19A6B] hover:bg-[#C19A6B] hover:text-white">Đọc thêm về chúng tôi</Link>
+                                <Link href="/about" className="px-6 py-3 text-sm text-white cursor-pointer border border-[#C19A6B] hover:bg-[#c19a6b] hover:text-white transition">Đọc thêm về chúng tôi</Link>
                             </div>
                         </div>
                     </section>

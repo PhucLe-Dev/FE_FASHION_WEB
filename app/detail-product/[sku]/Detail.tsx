@@ -74,10 +74,8 @@ export default function Detail({ initialProduct }: DetailProps) {
 
   if (isLoading) {
     return (
-      <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-75 z-50">
-        <div className="flex flex-col items-center">
-          <img src="https://i.pinimg.com/originals/be/ce/0c/bece0c797cb134aefb2cb836578c9249.gif" alt="" />
-        </div>
+      <div className="flex justify-center items-center h-64">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#c19a6b]"></div>
       </div>
     );
   }
@@ -130,20 +128,11 @@ export default function Detail({ initialProduct }: DetailProps) {
   return (
 
     <div>
-      {/* <section className="bg-secondary py-16">
-        <div>
-          <ul>
-            <li><Link href='/'>LUXE - HOME &gt;</Link></li>
-            <li><Link href={`/San-pham`}>SẢN PHẨM &gt;</Link></li>
-            <li><Link href={selectedVariant.sku}>{selectedVariant.sku}</Link></li>
-          </ul>
-        </div>
-      </section> */}
       <section className="pt-32 pb-20">
         <div>
           <ul className="container mx-auto px-6 flex items-start">
             <li><Link className="text-gray-600 hover:underline hover:text-[#c19a6b]" href='/'>LUXE - HOME&gt;</Link></li>
-            <li><Link className="text-gray-600 hover:underline hover:text-[#c19a6b]" href={`/San-pham`}>SẢN PHẨM&gt;</Link></li>
+            <li><Link className="text-gray-600 hover:underline hover:text-[#c19a6b]" href={`/products`}>SẢN PHẨM&gt;</Link></li>
             <li><Link className="text-gray-600 hover:underline hover:text-[#c19a6b]" href={selectedVariant.sku}>{selectedVariant.sku}</Link></li>
           </ul>
         </div>
@@ -343,7 +332,7 @@ export default function Detail({ initialProduct }: DetailProps) {
       <div id="comment-section">
         <Comment />
       </div>
-      <RelatedProduct sku={selectedVariant.sku}/>
+      <RelatedProduct sku={selectedVariant.sku} />
     </div>
   );
 }
